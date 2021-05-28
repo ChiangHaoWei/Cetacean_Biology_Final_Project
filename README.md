@@ -1,6 +1,6 @@
 # Cetacean_Biology_Final_Project
 
-Simple website for Orca班第四組期末展演
+Simple website for Orca班第四組期末展演 power by HTML UP
 
 ## Getting Start
 
