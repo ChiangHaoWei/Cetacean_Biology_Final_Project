@@ -1,0 +1,15 @@
+.country .country-subtitle {
+  font-size: 1.6em;
+}
+.country p {
+  text-align: left;
+}
+.country p red {
+  color: crimson;
+  font-weight: bold;
+}
+.country hr {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
