@@ -22,7 +22,6 @@ fetch('assets/js/draw_data_tw.json')
     tw_map.load()
     const node = document.getElementById('map_tw')
     node.style.marginLeft = '20%'
-    removeADs()
     dataTW = classify(temp_tw_data)
     rawDataTW = temp_tw_data
   })
@@ -36,7 +35,6 @@ fetch('assets/js/draw_data_irish.json')
     irish_map.load()
     const node = document.getElementById('map_irish')
     node.style.marginLeft = '25%'
-    removeADs()
   })
 
 const classify = (data) => {
@@ -124,23 +122,6 @@ const classify = (data) => {
 
   return result
 }
-
-const removeADs = () => {
-  var a = document.querySelectorAll("[href='https://simplemaps.com']")
-  // console.log(a)
-  if (a[1]) {
-    a[1].remove()
-  }
-  if (a[0]) {
-    a[0].remove()
-    console.log('find AD!')
-  } else {
-    console.log('not found!')
-  }
-}
-
-// window.setInterval(removeADs, 5000)
-// window.setTimeout(removeADs, 2000)
 
 const handleSelectChange = () => {
   const selectNode = document.getElementById('classify-category')
