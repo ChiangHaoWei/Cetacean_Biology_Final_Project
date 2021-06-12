@@ -41,6 +41,20 @@ const config = {
     plugins: {
       legend: {
         position: 'bottom',
+        labels: {
+          font: {
+            style: 'normal',
+          },
+        },
+      },
+      tooltip: {
+        bodyFont: {
+          style: 'normal',
+        },
+        footerFont: {
+          style: 'normal',
+          weight: 'normal',
+        },
       },
       title: {
         display: false,
@@ -49,5 +63,5 @@ const config = {
     },
   },
 }
-
+Chart.defaults.font.style = 'italic'
 var myChart = new Chart(document.getElementById('myChart'), config)
