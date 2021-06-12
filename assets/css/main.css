@@ -1,4 +1,4 @@
-@import url(fontawesome-all.min.css);
+@import url(all.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
 /*
@@ -346,6 +346,13 @@ input, select, textarea {
 
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
+		}
+
+		.row.row.direction-row-reverse {
+			flex-direction: row-reverse;
+		}
+		.row.direction-column {
+			flex-direction: column;
 		}
 
 		.row.aln-left {
@@ -1079,6 +1086,10 @@ input, select, textarea {
 
 				.row.gtr-uniform > * > :last-child {
 					margin-bottom: 0;
+				}
+
+				.row.row-medium {
+					flex-direction: row;
 				}
 
 				.row.aln-left {
@@ -2454,6 +2465,14 @@ input, select, textarea {
 	dl {
 		margin: 0 0 2em 0;
 	}
+		@media screen and (max-width: 736px) {
+			.team-member dl {
+				width: 100%;
+			}
+			dl dd {
+				width: 100%;
+			}
+		}
 
 		dl dt {
 			display: block;
@@ -3686,6 +3705,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		flex-direction: column;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -3727,7 +3747,7 @@ input, select, textarea {
 				#footer > * {
 					width: 100%;
 					margin-left: 0;
-					margin-bottom: 3em;
+					margin-bottom: 1em;
 				}
 
 				#footer .copyright {
@@ -3783,3 +3803,24 @@ input, select, textarea {
 			}
 
 		}
+
+		#general-wrapper {
+			max-width: calc(100% - 4em);
+			margin: 0 auto;
+		}
+	
+			@media screen and (max-width: 480px) {
+	
+				#general-wrapper {
+					max-width: calc(100% - 2em);
+				}
+	
+			}
+	
+			@media screen and (max-width: 360px) {
+	
+				#general-wrapper {
+					max-width: 100%;
+				}
+	
+			}

@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | 3DTest</title>
+    <title>Unity WebGL Player | Cetacean Biology Final Project</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=960 height=540></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -22,19 +22,19 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">3DTest</div>
+        <div id="unity-build-title">Cetacean Biology Final Project</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Dist.loader.js";
+      var loaderUrl = buildUrl + "/Dist_web.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Dist.data",
-        frameworkUrl: buildUrl + "/Dist.framework.js",
-        codeUrl: buildUrl + "/Dist.wasm",
+        dataUrl: buildUrl + "/Dist_web.data",
+        frameworkUrl: buildUrl + "/Dist_web.framework.js",
+        codeUrl: buildUrl + "/Dist_web.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "3DTest",
+        productName: "Cetacean Biology Final Project",
         productVersion: "1.0",
       };
 
@@ -63,7 +63,7 @@
         }, 5000);
       } else {
         canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.height = "540px";
       }
       loadingBar.style.display = "block";
 

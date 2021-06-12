@@ -1,15 +1,87 @@
-.country .country-subtitle {
-  font-size: 1.6em;
+.country h2 {
+  font-weight: bold;
 }
 .country p {
   text-align: left;
 }
-.country p red {
+.country p .highlight {
   color: crimson;
   font-weight: bold;
 }
 .country hr {
-  width: 90%;
+  width: 95%;
   margin-right: auto;
   margin-left: auto;
+}
+.reason h3 {
+  font-weight: bold;
+}
+
+.icon-image-border {
+  border-radius: 100%;
+  border-color: #dddddd;
+  padding: 0.65em;
+  border: solid 1px;
+  margin: 0 0 2em 0;
+  cursor: default;
+  display: inline-block;
+}
+
+.icon-image {
+  border-radius: 100%;
+  position: relative;
+  border: 0;
+}
+
+  .icon-image img {
+    border-radius: 100%;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+.caution-box .subtitle {
+  font-weight: bold;
+  color: crimson;
+  font-size: 1.1em;
+}
+
+.caution-box .title {
+  font-weight: bold;
+  font-size: 1.6em;
+  border-bottom: darkorchid;
+  margin-bottom: 0.7em;
+}
+
+.caution-box .discription {
+  max-width: 80%;
+}
+
+.caution-box .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 736px) {
+  .team-member {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.subunit-boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 5, 0;
+  stroke-linejoin: round;
 }

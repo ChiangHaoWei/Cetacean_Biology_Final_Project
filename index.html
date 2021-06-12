@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Saving Stranded Whales</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,16 +22,18 @@
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
 						<h1>期末報告</h1>
-						<p>鯨魚擱淺救援 <br />
-						built by <a href="https://twitter.com/ajlkn">@Orca班 第四組</a> for <a href="https://html5up.net">鯨豚保育生物學</a>.</p>
+						<p>鯨豚擱淺救援 <br />
+						built by <a href="https://github.com/ChiangHaoWei/Cetacean_Biology_Final_Project">@Orca班 第四組</a> for <a href="https://github.com/ChiangHaoWei/Cetacean_Biology_Final_Project">鯨豚保育生物學</a>.</p>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">鯨魚擱淺事件整理</a></li>
-							<li><a href="#second">應對方式</a></li>
+							<li><a href="#first">鯨豚擱淺現況</a></li>
+							<li><a href="#second">鯨豚擱淺案件</a></li>
+							<li><a href="#third">鯨豚擱淺原因</a></li>
+							<li><a href="#forth">幫助擱淺的鯨豚</a></li>
 							<li><a href="#cta">Game Started</a></li>
 						</ul>
 					</nav>
@@ -44,16 +46,16 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>About us</h2>
+											<h2>Introduction</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+										<p>根據許多資料顯⽰，全球的擱淺鯨豚數量逐年上升，⽽我們居住的台灣也不例外，
+											究竟鯨豚為何會擱淺？遇到擱淺鯨豚時，我們⼜該如何處理和幫助他們呢？
+											此網站內整理並回顧了相關的⽂獻，請⼤家仔細瀏覽，並透過⼩遊戲加深印象吧！</p>
 										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
+											<li><a href="index_unity.html".html" class="button">直接玩遊戲</a></li>
 										</ul>
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/save_the_whale.jpg" alt="" /></span>
 								</div>
 							</section>
 
@@ -61,89 +63,29 @@
 							<section id="first" class="main special">
 
 								<header class="major">
-									<h2>鯨豚擱淺趨勢</h2>
+									<h2>各地區鯨豚擱淺現況</h2>
 								</header>
-
-								<div class="country">
-									<h3 class="country-subtitle">智利</h3>
-									<p>
-										從1968-2020年，近50年有紀錄的擱淺事件為436件，包括來自8科，21屬、35種的鯨豚。
-										多數（約佔總數94%）為單獨擱淺（少於2隻），18件集體擱淺以及9件稀少的超大型擱淺（多達25隻）。<br />
-										數據顯示所有案例大體平均分布於近50年，只有少數幾年出現峰值。各個年間又分擱淺案例號發季節，
-										以冬、夏為多。然而，<red>近10年</red>的案例有<red>穩定上升</red>的趨勢。詳見下表，棕線為擱淺鯨豚總數，藍線為擱淺案例數。
-									</p>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/test_chart01.webp" alt="" /></span></div>
-										</div>
+								<p>根據目前各地區的相關新聞報導與研究，世界各地區的鯨豚擱淺事件都有逐漸增加的趨勢，以下就以台灣為例。</p>
+								<div class="row" id="map-option">
+									<div class="col-3 col-4-large col-12-medium">
+										<select name="classify-category" id="classify-category" onchange="handleSelectChange()">
+											<option value="">- Category -</option>
+											<option value="year">Years</option>
+											<option value="month">Months</option>
+											<option value="season">Seasons</option>
+										</select>
 									</div>
-									<hr />
-									<h3 class="country-subtitle">英國</h3>
-									<p>
-										2011-2017年，英國海岸共發生4896起鯨豚擱淺事件，其中有52件集體擱淺，相比前七年的數據上升了15%，
-										而光2017年的擱淺事件就多達1000件。已知原因包括漁業受傷、感染性疾病以及塑膠汙染等等，
-										其中又以疾病與意外捕撈造成的死亡佔多數。專家尚未找出擱淺案例增加的確切原因，認為其與近年部分鯨豚數量的增加也有關聯。
-									</p>
-									<hr />
-									<h3 class="country-subtitle">美洲</h3>
-									<p>
-										美國國家海洋漁業局（National Marine Fisheries Service, NMFS）
-										曾針對2010-2011年間北墨西哥灣的鯨豚族群狀態發布「不尋常死亡事件警告（Unusual Mortality Event, UME）」，要求即刻做出回應。
-										其中雖然只有4%是活體擱淺，但考量到2010年同時發生了墨西哥灣漏油事故（屍體沖刷上岸居多），
-										扣除其造成的生物傷亡，可推知擱淺案例總數的大幅上升有除了漏油以外的其他成因。<br />
-										其實，在漏油事件發生以前，墨西哥灣的擱淺事件發生頻率已有顯著增長，2010年3月時，超過50隻鯨豚被沖上岸，遠遠大於2002-2009年3月的平均數目20隻。
-									</p>
-									<hr />
-									<h3 class="country-subtitle">台灣</h3>
-									<p>
-										擱淺數目逐年上升，從2015年以後幾乎呈線性成長。
-										2017年通報數不超過100件，到2019年高達150件，共計22種鯨豚擱淺，其中活體擱淺比例佔40%。
-										救援執行單位判定，除了不明原因的擱淺以外，感染致死與意外捕撈導致的鯨豚擱淺皆佔總體事件一定比例，
-										尤其是江豚死亡數近年顯著增加，很可能與海上人為活動變得頻繁有關。
-									</p>
-									<hr />
-									<h3 class="country-subtitle">非洲</h3>
-									<p>
-										南非誇祖魯-納塔爾省海岸的擱淺紀錄，從2015年的40件躍升至2016的74件，
-										其中有十件為大型鯨豚，大多數為個體擱淺，整體呈上升趨勢。此份觀察報告指出，
-										由於冬季鯨豚的遷徙造成擱淺案例季度增加，是無可避免的自然因素，
-										但其餘因未知原因甚至明顯人為相干原因導致的活體與死亡擱淺也確實隨之上升。
-										2008年以後通報的擱淺案件多達412件。
-										<div class="box alt">
-											<div class="row gtr-uniform">
-												<div class="col-12"><span class="image fit"><img src="images/test_chart03.jpg" alt="" /></span></div>
-											</div>
-										</div>
-									</p>
-									<hr />
+									<div class="col-9 col-8-large col-12-medium"></div>
+									<div id="spacing-top" class="col-12"></div>
+									<div id="spacing-down" class="col-12"></div>
 								</div>
 								
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+								<div id="map_tw" style="width: 50%;max-width: 50%;"></div>
+								<p style="margin-top: 20px;">資料來源：  &nbsp; <a href="http://www.whale.org.tw/index.php">中華鯨豚協會網站</a></p>
+								
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="current_situation.html" class="button">Learn More</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -151,50 +93,115 @@
 						<!-- Second Section -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>應對方式</h2>
+									<h2>近年發生之鯨豚擱淺案件</h2>
 								</header>
-								<div>
-									<canvas id="myChart"></canvas>
-								</div>
-								<hr />
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
+								<p>近年來不管是國內還是國外接發生了許多鯨豚擱淺案件，下圖為近兩年愛爾蘭附近海域所發生的鯨豚擱淺案件。</p>
+								<!-- <svg width="1000px" height="600px"></svg> -->
+								<div id="map_irish" style="width: 50%;max-width: 50%;"></div>
+								<p style="margin-top: 20px;">資料來源：  &nbsp; <a href="https://iwdg.ie/">Irish Whale and Dolphin Group</a></p>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="cases.html".html" class="button">Learn More</a></li>
 									</ul>
 								</footer>
+							</section>
+
+						<!-- Third Section -->
+							<section id="third" class="main special">
+								<header class="major">
+									<h2>鯨豚擱淺原因</h2>
+								</header>
+								<p>不論健康或是不健康個體都有可能擱淺，且擱淺後可能因過熱、溺水、循環速度下降等原因而死亡（Hobson, 2021）。擱淺事件又可分成單獨與集體擱淺，其中單獨個體較常發生，通常認為是因嚴重疾病而造成，而大推模的擱淺則可能因為物理條件（天氣、潮汐、海流、地形等）、生物條件（捕食者、獵物、回聲定位干擾、相關疾病感染等）以及兩者的交互作用導致，另外大腦皮層下區域受壓力時，也可能刺激鯨豚上岸尋求庇護（Cordes, 1982），也有研究指出當太陽風增強影響地球磁場時，也可能與鯨豚擱淺相關（Vanselow et al. 2018）。除了上述中的自然因素，尚有許多會造成鯨豚擱淺的人為因素：</p>
+								<ul class="features">
+									<li>
+										<div class="icon major">
+											<span class="icon-image"><img src="images/cartoon_fishing_net.jpg" alt="" /></span>
+										</div>
+										<h3>漁業干擾</h3>
+										<p>包含了船隻撞擊、漁民誤捕</p>
+									</li>
+									<li>
+										<div class="icon major">
+											<span class="icon-image"><img src="images/sonar_noise_whale.jpg" alt="" /></span>
+										</div>
+										<h3>軍事聲納影響</h3>
+										<p>軍事聲納對於他們來說就如同高分貝的噪音</p>
+									</li>
+									<li>
+										<div class="icon major">
+											<span class="icon-image"><img src="images/trash_whale.jpg" alt="" /></span>
+										</div>
+										<h3>海洋廢棄物污染</h3>
+										<p>目前大多數擱淺的鯨豚體內都含有大量的人造垃圾</p>
+									</li>
+								</ul>
+								
+								
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="reason.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Forth Section -->
+							<section id="forth" class="main special">
+								<header class="major">
+									<h2>如何減少並幫助擱淺鯨豚</h2>
+								</header>
+								<div class="caution-box">
+									<div class="title">三要</div>
+									<ui class="features">
+										<li>
+											<span class="subtitle">要扶正</span>
+											<p>將鯨豚調整至頭部朝向岸邊，垂身體直於海浪的位置，且將其扶正到背鰭與呼吸孔朝上的姿勢，同時注意海水不超過眼睛高度與漲退潮，移動鯨豚時注意將其胸鰭貼近腹部避免受傷。若是情況許可，可在鯨豚下方挖洞並擺放防水布，以減輕擱淺個體器官受到其自身體重的壓迫。</p>
+										</li>
+										<li>
+											<span class="subtitle">要保濕</span>
+											<p>使用毛巾等覆蓋鯨豚，優先覆蓋背鰭與尾鰭，同時避開呼吸孔位置。以乾淨海水澆淋鯨豚身體，切記勿讓海水、砂石等直接進入呼吸孔。</p>
+										</li>
+										<li>
+											<span class="subtitle">要記錄呼吸心跳</span>
+											<p>觀察呼吸孔的閉合，當氣孔閉合後開始計時5分鐘，將手掌輕壓於左側胸鰭下方內部的位置，計算一分鐘內的心跳次數，且每30分鐘測量和紀錄。</p>
+										</li>
+									</ui>
+
+									<hr />
+									<div class="title">四不要</div>
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-6 card">
+												<span class="subtitle">不要讓鯨豚風吹日曬</span>
+												<p class="discription">以布覆蓋、撐傘等避免太陽日曬，另也以物品擋風，配合持續澆灌乾淨海水。</p>
+											</div>
+											<div class="col-6 card">
+												<span class="subtitle">不要太靠近鯨豚頭部與尾部</span>
+												<p class="discription">避免受利齒、尾部拍擊所傷。</p>
+											</div>
+											<div class="col-6 card">
+												<span class="subtitle">不要拖拉、翻滾鯨豚身體</span>
+												<p class="discription">使用床單、擔架等幫助搬運和移動鯨豚，扶正後就不要任意翻滾鯨豚。</p>
+											</div>
+											<div class="col-6 card">
+												<span class="subtitle">不要喧譁</span>
+												<p class="discription">隔離群眾、減少噪音以降低擱淺個體的緊迫。</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								
 							</section>
 
 						<!-- Get Started -->
 							<section id="cta" class="main special">
 								<header class="major">
-									<h2>Simple Game</h2>
-									<p>
-										如果電腦是window的話可以直接下載Dist.zip，下載完解壓縮後直接點開3DTest.exe即可<br />
-										如果要用網頁版的話要下載在雲端的Build和TemplateData，然後將其放在同一個資料夾中，最後按照Readme中的說明來使用
-										<strong>雲端必須用學校的gsuit</strong>
-									</p>
+									<h2>簡單小遊戲</h2>
+									<p>看完了前面鯨豚擱淺的資料，想必你對於鯨豚擱淺有一定的了解了，那麼不妨就透過這個簡單的遊戲幫助你加深印象吧！</p>
 								</header>
 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="index_unity.html" class="button primary">Get Started</a></li>
-										<li><a href="https://drive.google.com/drive/folders/1NeISIolZ8QkAJ3TNb0xY64VZAuPcvzjX?usp=sharing" class="button">雲端</a></li>
+										<li><a href="https://drive.google.com/drive/folders/1NeISIolZ8QkAJ3TNb0xY64VZAuPcvzjX?usp=sharing" class="button">Download Game</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -203,38 +210,46 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
+						<div style="width: 100%;">
+							<h2>About us</h2>
+							<div class="team-member">
+								<dl class="alt" style="width: 50%;">
+									<dt>陳銘杰</dt>
+									<dd>影片腳本、拍攝</dd>
+									<dt>鍾宜安</dt>
+									<dd>網站資料收集與彙整</dd>
+									<dt>陳矩仁</dt>
+									<dd>遊戲劇本構想</dd>
+								</dl>
+								<dl class="alt" style="width: 50%;">
+									<dt>江浩瑋</dt>
+									<dd>遊戲製作與網站架設</dd>
+									<dt>劉映辰</dt>
+									<dd>影片剪輯</dd>
+									<dt>陳芷晴</dt>
+									<dd>遊戲素材蒐集</dd>
+								</dl>
+							</div>
+						</div>
+						<div>
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://html5up.net" class="icon brands fa-html5 alt"><span class="label">HTML5</span></a></li>
+								<li><a href="https://www.facebook.com/tcstcswhale" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/ChiangHaoWei/Cetacean_Biology_Final_Project" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.oca.gov.tw/ch/home.jsp?id=189&parentpath=0,6,185" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://unity.com/" class="icon brands fa-unity alt"><span class="label">unity</span></a></li>
 							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+						<p class="copyright">&copy; ChiangHaoWei. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
 
 		<!-- Scripts -->
 			<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+			<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+			<script src="https://d3js.org/topojson.v1.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -242,7 +257,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/mapdata_irish.js"></script>
+			<script src="assets/js/countrymap_irish.js"></script>
+			<script type="text/javascript">
+				var irish_map = simplemaps_countrymap.create()
+			</script>
 			<script src="assets/js/chart.js"></script>
+			<script src="assets/js/mapdata.js"></script>
+			<script src="assets/js/countrymap.js"></script>
+			<script type="text/javascript">
+				var tw_map = simplemaps_countrymap.create()
+			</script>
+			<script src="assets/js/map_control.js"></script>
+			<!-- <script src="assets/js/drawMap.js"></script> -->
 
 	</body>
 </html>
